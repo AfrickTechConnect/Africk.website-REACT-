@@ -59,7 +59,7 @@ function DrawerNav({closeDrawer}) {
                         <Link to='/'>Home</Link>
                     </ListItem>
                     <ListItem onClick={closeDrawer}>
-                        <a href="https://medium.com/@africk.connect" target="_blank">our blog</a>
+                        <a href="https://medium.com/@africk.connect" target="_blank" rel="noreferrer">our blog</a>
                     </ListItem>
                     {/* <ListItem>
                         products

@@ -21,7 +21,7 @@ function FirstSection() {
                  </div>
             </div>
             <div className="hidden md:flex  md:pr-16">
-                <img  className=" hidden md:block" src={GirlImage} height={450} width={450}/>
+                <img  className=" hidden md:block" src={GirlImage} height={450} width={450} alt="Image of business woman"/>
             </div>
             
 

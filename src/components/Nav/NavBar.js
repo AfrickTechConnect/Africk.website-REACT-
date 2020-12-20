@@ -13,7 +13,7 @@ function NavBar({ openCloseDrawer }) {
         <>
             <Nav>
                 <NavLink href="/" className="mr-40">
-                    <img src={Logo} className="p-0 h-80" />
+                    <img src={Logo} className="p-0 h-80" alt="Africk Connect Logo" />
                 </NavLink>
                 <Bars onClick={openCloseDrawer}/>
                 <NavMenu>

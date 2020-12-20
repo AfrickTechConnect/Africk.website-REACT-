@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Card from '../../Card';
 import CustomBtn from '../CustomBtn';
 import SectionTitle from './SectionTitle';
@@ -7,9 +7,9 @@ import WeWorking from '../../../assets/we_working.png';
 function BlogSection(props) {
     const [data, setData] = useState([]);
 
-    const getData = (data) => {
-        setData([...data])
-    }
+    // const getData = (data) => {
+    //     setData([...data])
+    // }
     return (
         <div className="py-24 bg-one">
              <div className="flex justify-center w-full">
@@ -32,7 +32,7 @@ function BlogSection(props) {
                 <div className="flex justify-center w-full md:mt-8"> 
                     <div className="flex  md:flex-nowrap flex-col ">
                         <div className="md:mb-5 flex justify-center">
-                            <img src={WeWorking} className="md:h-96 h-64"/>
+                            <img src={WeWorking} className="md:h-96 h-64" alt="No Blog"/>
                         </div>
                         <h3 className="hidden md:block text-4xl font-normal">
                             No Posts Right now. We are working on it😯

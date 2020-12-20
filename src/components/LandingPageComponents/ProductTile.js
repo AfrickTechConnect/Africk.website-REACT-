@@ -21,7 +21,7 @@ function ProductTile({title, subtitle, slideName}) {
                 </span>
             </div>
             <div className="hidden md:flex md:flex-col md:items-center md:justify-center h-96 w-96 rounded-full md:mr-64">
-                <img src={images[slideName]}   alt="Product image"/>
+                <img src={images[slideName]}   alt="Product"/>
             </div>
         </div>
         </>

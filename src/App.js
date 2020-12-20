@@ -4,7 +4,7 @@ import LandingPage from './components/LandingPage';
 import NavBar from './components/Nav/NavBar';
 import Backdrop from './components/Backdrop/Backdrop';
 import DrawerNav from './components/DrawerNav/DrawerNav';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { ContactUs } from './components/ContactUs';
 import Footer from './components/LandingPageComponents/Footer';
 

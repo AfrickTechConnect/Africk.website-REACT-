@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import CustomBtn from '../LandingPageComponents/CustomBtn';
 import SectionTitle from '../LandingPageComponents/Sections/SectionTitle';
 import { FaRegPaperPlane } from 'react-icons/fa';
 import { useFormValidation } from '../hooks'

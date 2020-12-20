@@ -1,0 +1,8 @@
+.africa {
+    height: 600px;
+}
+.mobileMenu {
+    z-index: 1;
+    position: absolute;
+    background-color: #FDFDFD; 
+}

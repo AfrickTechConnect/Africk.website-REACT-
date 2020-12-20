@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './styles/App.css';
+import LandingPage from './components/LandingPage';
+import NavBar from './components/Nav/NavBar';
+import Backdrop from './components/Backdrop/Backdrop';
+import DrawerNav from './components/DrawerNav/DrawerNav';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { ContactUs } from './components/ContactUs';
+import Footer from './components/LandingPageComponents/Footer';
 
 function App() {
+
+  const [isDrawerOpen, setDrawerState] = useState(false);
+
+  const openCloseDrawer = () => {
+    setDrawerState( prevState => !prevState)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <BrowserRouter>
+    <div style={{height: '100%' }}>
+    
+      <NavBar openCloseDrawer={openCloseDrawer}/>
+      {isDrawerOpen && <DrawerNav closeDrawer={openCloseDrawer} /> }
+      {isDrawerOpen && <Backdrop /> }
+
+      <div className="route-container">
+        <Switch>
+          <Route exact path='/' component={LandingPage} />
+          <Route exact path='/contact' component={ContactUs} />
+        </Switch>
+
+      </div>
+
+      <Footer />
+
     </div>
+  </BrowserRouter>
   );
 }
 

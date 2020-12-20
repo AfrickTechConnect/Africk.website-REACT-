@@ -26,7 +26,7 @@ const INITIAL_STATE = {
 }
 
 function ContactUs() {
-    const [ handleChange, handleSubmit ] = useFormValidation(INITIAL_STATE);
+    const { handleChange, handleSubmit } = useFormValidation(INITIAL_STATE);
     return (
         <div  className="header px-10 md:px-0 py-10">
             <div className="flex justify-center pb-10">

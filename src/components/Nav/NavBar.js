@@ -8,12 +8,18 @@ import {
 } from './NavBarElements';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/logo_2.png'
+import styled from 'styled-components';
+
+const IMG = styled.img`
+    object-fit: cover;
+`
+
 function NavBar({ openCloseDrawer }) {
     return (
         <>
             <Nav>
                 <NavLink href="/" className="mr-40">
-                    <img src={Logo} className="p-0 h-80" alt="Africk Connect Logo" />
+                    <IMG src={Logo} className="p-0 h-80 " alt="Africk Connect Logo" />
                 </NavLink>
                 <Bars onClick={openCloseDrawer}/>
                 <NavMenu>
